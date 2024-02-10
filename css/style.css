@@ -1,19 +1,17 @@
 /* COLOR PALLETE */
 :root{
-    --light: #FBFADA;
-    --mid-light: #ADBC9F;
-    --mid-dark: #436850;
-    --dark: #12372A;
+    --light: #FDF0D1;
+    --mid-light: #CBAEB8;
+    --mid-dark: #6B4357;
+    --dark: #381F24;
 }
-
-
 
 .skip-link{
     position: absolute;
-    top: -40px;
+    top: -50px;
     left: 0;
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--dark);
+    color: var(--light);
     z-index: 999;
     transition: top 0.3s ease;
     text-decoration: none;
@@ -29,7 +27,7 @@
 
 .skip-link:not(:focus):not(:active) {
     top: -40px;
-  }
+}
 
 nav{
     width: 100%;
@@ -46,14 +44,19 @@ nav{
     padding-left: 0;
     padding-right: 0;
     height: 100%;
+    column-gap: none;
 }
-
+.nav_bar_list{
+    width: 100%;
+}
 .nav_bar_item{
     border: 1px solid var(--dark);
     background-color: var(--mid-light);
     color: var(--dark);
     text-align: center;
     font-size: 28px;
+    height: 75%;
+    width: 100%;
 }
 
 a{
@@ -73,6 +76,7 @@ a:visited{
     border: 2px solid black;
     border-left-width: 1px;
     border-right-width: 1px;
+    height: 100%;
 }
 
 .topics-container{
@@ -278,4 +282,8 @@ h3{
     .current_page{
         font-size: 40px;
     }
+}
+
+.skip-link{
+    height: 40px;
 }
