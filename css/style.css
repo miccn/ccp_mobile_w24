@@ -295,3 +295,10 @@ h3{
       animation: none !important;
     }
   }
+
+.photo-gallery-container:focus {
+    outline: 10px solid var(--light);
+}
+.nav_bar_list:focus {
+    outline: 10px solid var(--light);
+}
