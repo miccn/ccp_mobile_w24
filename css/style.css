@@ -6,10 +6,7 @@
     --dark: #12372A;
 }
 
-.grid-gallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+
 
 .skip-link{
     position: absolute;
@@ -73,4 +70,98 @@ a:visited{
     border: 2px solid black;
     border-left-width: 1px;
     border-right-width: 1px;
+}
+
+.pets-container{
+    display: grid;
+    background-color: var(--light);
+    /* border: 1px solid var(--mid-light); */
+    min-width: 400px;
+    justify-items: center;
+    row-gap: 10px;
+    grid-template-columns: 1fr;
+}
+
+
+
+
+.pets-container-object{
+    border: 1px solid var(--dark);
+    max-width: 1000px;
+    min-width: 600px;
+    background-color: var(--mid-light)
+}
+
+.pets-profile-img{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border: 10px solid var(--mid-dark);
+    height: auto;
+    max-width: 600px;
+
+}
+
+.pets-photo-gallery-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    min-height: 200px;
+    max-height: 300px;
+    overflow: scroll;
+    scrollbar-width: none;
+    column-gap: 3px;
+    row-gap: 3px;
+    max-width: 600px;
+    align-items: center;
+    background-color: var(--mid-light);
+    justify-items: center;
+}
+
+.pets-photo-gallery{
+    width: auto;
+    height: auto;
+    align-items: center;
+    border: 3px solid var(--mid-dark);
+    max-height: 300px;
+}
+
+#main{
+    min-width: 400px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.pet-species{
+    color: var(--dark);
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+body{
+    background-color: var(--light);
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--dark);
+}
+
+@media (min-width: 1300px){
+    .pets-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1900px){
+    .pets-container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #main{
+        max-width: 1800px;
+    }
 }
