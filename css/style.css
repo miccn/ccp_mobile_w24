@@ -77,6 +77,8 @@ a:visited{
     border-left-width: 1px;
     border-right-width: 1px;
     height: 100%;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 .topics-container{
