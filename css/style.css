@@ -95,8 +95,8 @@ a:visited{
     display: flex;
     border: 10px solid var(--mid-dark);
     height: auto;
-    min-width: 0.6vw;
-    max-width: 1vw;
+    width: auto;
+    max-width: 80%;
 }
 
 .pets-photo-gallery-container{
