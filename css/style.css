@@ -75,21 +75,17 @@ a:visited{
 .pets-container{
     display: grid;
     background-color: var(--light);
-    /* border: 1px solid var(--mid-light); */
-    min-width: 400px;
+    min-width: 0.7vw;
     justify-items: center;
     row-gap: 10px;
     grid-template-columns: 1fr;
+
 }
-
-
-
 
 .pets-container-object{
     border: 1px solid var(--dark);
-    max-width: 1000px;
-    min-width: 600px;
-    background-color: var(--mid-light)
+    width: 100%;
+    background-color: var(--mid-light)ßßß
 }
 
 .pets-profile-img{
@@ -99,37 +95,41 @@ a:visited{
     display: flex;
     border: 10px solid var(--mid-dark);
     height: auto;
-    max-width: 600px;
-
+    min-width: 0.6vw;
+    max-width: 1vw;
 }
 
 .pets-photo-gallery-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100%;
+    width: 90%;
     min-height: 200px;
     max-height: 300px;
     overflow: scroll;
     scrollbar-width: none;
     column-gap: 3px;
     row-gap: 3px;
-    max-width: 600px;
+    max-width: 100%;
     align-items: center;
     background-color: var(--mid-light);
     justify-items: center;
+    border: 2px solid black;
+    padding-right: auto;
+    padding-left: auto;
 }
 
 .pets-photo-gallery{
-    width: auto;
+    width: 95%;
     height: auto;
     align-items: center;
     border: 3px solid var(--mid-dark);
     max-height: 300px;
+    padding: 2%;
+    margin: 2%;
 }
 
 #main{
-    min-width: 400px;
-    max-width: 1200px;
+    width: 1vw;
     margin: 0 auto;
 }
 
@@ -151,9 +151,37 @@ h1{
     color: var(--dark);
 }
 
+@media (min-width: 100px){
+    .pets-container{
+        grid-template-columns: 1fr;
+    }
+    #main{
+        width: auto;
+        min-width: 333px;
+    }
+    h1{
+        color: purple;
+    }
+}
+
+@media (min-width: 700px){
+    .pets-container{
+        grid-template-columns: 1fr;
+    }
+    #main{
+        width: 600px;
+    }
+    h1{
+        color: red;
+    }
+}
+
 @media (min-width: 1300px){
     .pets-container{
         grid-template-columns: 1fr 1fr;
+    }
+    #main{
+        width: 1200px;
     }
 }
 
@@ -162,6 +190,6 @@ h1{
         grid-template-columns: 1fr 1fr 1fr;
     }
     #main{
-        max-width: 1800px;
+        width: 1800px;
     }
 }
