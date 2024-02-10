@@ -85,7 +85,9 @@ a:visited{
 .pets-container-object{
     border: 1px solid var(--dark);
     width: 100%;
-    background-color: var(--mid-light)ßßß
+    background-color: var(--mid-light);
+    justify-items: center;
+    align-items: center;
 }
 
 .pets-profile-img{
@@ -139,7 +141,14 @@ a:visited{
     text-align: center;
     font-weight: bold;
 }
-
+.centering{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    border-color: var(--mid-light)
+}
 body{
     background-color: var(--light);
 }
