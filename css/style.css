@@ -289,3 +289,9 @@ h3{
 .skip-link{
     height: 40px;
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .animated-content {
+      animation: none !important;
+    }
+  }
