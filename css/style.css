@@ -44,6 +44,7 @@ nav{
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    height: 100%;
 }
 
 .nav_bar_item{
@@ -72,7 +73,7 @@ a:visited{
     border-right-width: 1px;
 }
 
-.pets-container{
+.topics-container{
     display: grid;
     background-color: var(--light);
     min-width: 0.7vw;
@@ -82,7 +83,7 @@ a:visited{
 
 }
 
-.pets-container-object{
+.card{
     border: 1px solid var(--dark);
     width: 100%;
     background-color: var(--mid-light);
@@ -90,7 +91,7 @@ a:visited{
     align-items: center;
 }
 
-.pets-profile-img{
+.card-face{
     align-items: center;
     margin-left: auto;
     margin-right: auto;
@@ -100,7 +101,7 @@ a:visited{
     width: auto;
     max-width: 80%;
 }
-.pets-photo-gallery-container{
+.photo-gallery-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 90%;
@@ -117,7 +118,7 @@ a:visited{
     padding-left: auto;
 }
 
-.pets-photo-gallery{
+.photo-gallery{
     width: 95%;
     height: auto;
     align-items: center;
@@ -158,7 +159,7 @@ h1{
 }
 
 @media (min-width: 100px){
-    .pets-container{
+    .topics-container{
         grid-template-columns: 1fr;
     }
     #main{
@@ -171,7 +172,7 @@ h1{
 }
 
 @media (min-width: 700px){
-    .pets-container{
+    .topics-container{
         grid-template-columns: 1fr;
     }
     #main{
@@ -183,10 +184,10 @@ h1{
 }
 
 @media (min-width: 1300px){
-    .pets-container{
+    .topics-container{
         grid-template-columns: 1fr 1fr;
     }
-    .pets-photo-gallery-container{
+    .photo-gallery-container{
         overflow: scroll;
         scrollbar-width: none;
         max-height: 300px;
@@ -194,18 +195,36 @@ h1{
     #main{
         width: 1200px;
     }
+    nav {
+        height: 40px;
+    }
+    .nav_bar_item{
+        font-size: 28px;
+    }
+    .current_page{
+        font-size: 35px;
+    }
 }
 
 @media (min-width: 1900px){
-    .pets-container{
+    .topics-container{
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .pets-photo-gallery-container{
+    .photo-gallery-container{
         overflow: scroll;
         scrollbar-width: none;
         max-height: 300px;
     }
     #main{
         width: 1800px;
+    }
+    nav {
+        height: 50px;
+    }
+    .nav_bar_item{
+        font-size: 32px;
+    }
+    .current_page{
+        font-size: 40px;
     }
 }
