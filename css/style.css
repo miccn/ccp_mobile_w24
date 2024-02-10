@@ -100,15 +100,12 @@ a:visited{
     width: auto;
     max-width: 80%;
 }
-
 .pets-photo-gallery-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 90%;
     min-height: 200px;
-    max-height: 300px;
-    overflow: scroll;
-    scrollbar-width: none;
+    
     column-gap: 3px;
     row-gap: 3px;
     max-width: 100%;
@@ -189,6 +186,11 @@ h1{
     .pets-container{
         grid-template-columns: 1fr 1fr;
     }
+    .pets-photo-gallery-container{
+        overflow: scroll;
+        scrollbar-width: none;
+        max-height: 300px;
+    }
     #main{
         width: 1200px;
     }
@@ -197,6 +199,11 @@ h1{
 @media (min-width: 1900px){
     .pets-container{
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .pets-photo-gallery-container{
+        overflow: scroll;
+        scrollbar-width: none;
+        max-height: 300px;
     }
     #main{
         width: 1800px;
